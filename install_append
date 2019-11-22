@@ -1,0 +1,2 @@
+# Need to run *just* install, but add resourcepath
+python3 -tt setup.py install --root=%{buildroot} --resourcepath=/usr/share
