@@ -4,10 +4,10 @@
 #
 Name     : gramps
 Version  : 5.1.1
-Release  : 1
+Release  : 2
 URL      : https://github.com/gramps-project/gramps/archive/v5.1.1/gramps-5.1.1.tar.gz
 Source0  : https://github.com/gramps-project/gramps/archive/v5.1.1/gramps-5.1.1.tar.gz
-Summary  : No detailed summary available
+Summary  : Gramps is a genealogy program for Windows, Linux, Apple MacOS and other UNIX-like systems. It helps you track your family tree by allowing you to store, edit, and research genealogical data.
 Group    : Development/Tools
 License  : GFDL-1.2 GPL-2.0
 Requires: gramps-bin = %{version}-%{release}
@@ -100,7 +100,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1574387002
+export SOURCE_DATE_EPOCH=1574441663
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
