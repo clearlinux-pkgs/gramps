@@ -4,7 +4,7 @@
 #
 Name     : gramps
 Version  : 5.1.2
-Release  : 5
+Release  : 6
 URL      : https://github.com/gramps-project/gramps/archive/v5.1.2/gramps-5.1.2.tar.gz
 Source0  : https://github.com/gramps-project/gramps/archive/v5.1.2/gramps-5.1.2.tar.gz
 Summary  : Gramps is a genealogy program for Windows, Linux, Apple MacOS and other UNIX-like systems. It helps you track your family tree by allowing you to store, edit, and research genealogical data.
@@ -18,6 +18,7 @@ Requires: gramps-man = %{version}-%{release}
 Requires: gramps-python = %{version}-%{release}
 Requires: gramps-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
+BuildRequires : intltool
 
 %description
 This directory contains the catalog needed to use the Gramps glade files in glade.
@@ -100,7 +101,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1579047767
+export SOURCE_DATE_EPOCH=1579735542
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -138,6 +139,7 @@ python3 -tt setup.py install --root=%{buildroot} --resourcepath=/usr/share
 
 %files data
 %defattr(-,root,root,-)
+/usr/share/applications/gramps.desktop
 /usr/share/gramps/authors.xml
 /usr/share/gramps/css/Web_Basic-Ash.css
 /usr/share/gramps/css/Web_Basic-Blue.css
@@ -544,7 +546,10 @@ python3 -tt setup.py install --root=%{buildroot} --resourcepath=/usr/share
 /usr/share/icons/gnome/scalable/mimetypes/gnome-mime-application-x-gramps-xml.svg
 /usr/share/icons/gnome/scalable/mimetypes/gnome-mime-application-x-gramps.svg
 /usr/share/icons/gramps.png
+/usr/share/metainfo/gramps.appdata.xml
+/usr/share/mime-info/gramps.keys
 /usr/share/mime-info/gramps.mime
+/usr/share/mime-packages/gramps.xml
 
 %files doc
 %defattr(0644,root,root,0755)
