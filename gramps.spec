@@ -4,7 +4,7 @@
 #
 Name     : gramps
 Version  : 5.1.2
-Release  : 7
+Release  : 8
 URL      : https://github.com/gramps-project/gramps/archive/v5.1.2/gramps-5.1.2.tar.gz
 Source0  : https://github.com/gramps-project/gramps/archive/v5.1.2/gramps-5.1.2.tar.gz
 Summary  : Gramps is a genealogy program for Windows, Linux, Apple MacOS and other UNIX-like systems. It helps you track your family tree by allowing you to store, edit, and research genealogical data.
@@ -22,9 +22,12 @@ Requires: osm-gps-map
 BuildRequires : PyICU
 BuildRequires : buildreq-distutils3
 BuildRequires : intltool
+BuildRequires : osm-gps-map
 
 %description
-This directory contains the catalog needed to use the Gramps glade files in glade.
+The Gramps Project ( https://gramps-project.org ) [![Build Status](https://travis-ci.org/gramps-project/gramps.svg?branch=master)](https://travis-ci.org/gramps-project/gramps)[![codecov.io](https://codecov.io/github/gramps-project/gramps/coverage.svg?branch=master)](https://codecov.io/github/gramps-project/gramps?branch=master)
+===================
+We strive to produce a genealogy program that is both intuitive for hobbyists and feature-complete for professional genealogists.
 
 %package bin
 Summary: bin components for the gramps package.
@@ -104,7 +107,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1581615735
+export SOURCE_DATE_EPOCH=1582932235
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
