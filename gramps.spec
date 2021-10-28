@@ -4,7 +4,7 @@
 #
 Name     : gramps
 Version  : 5.1.4
-Release  : 20
+Release  : 21
 URL      : https://github.com/gramps-project/gramps/archive/v5.1.4/gramps-5.1.4.tar.gz
 Source0  : https://github.com/gramps-project/gramps/archive/v5.1.4/gramps-5.1.4.tar.gz
 Summary  : Gramps is a genealogy program for Windows, Linux, Apple MacOS and other UNIX-like systems. It helps you track your family tree by allowing you to store, edit, and research genealogical data.
