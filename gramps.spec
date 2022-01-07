@@ -4,7 +4,7 @@
 #
 Name     : gramps
 Version  : 5.1.4
-Release  : 24
+Release  : 25
 URL      : https://github.com/gramps-project/gramps/archive/v5.1.4/gramps-5.1.4.tar.gz
 Source0  : https://github.com/gramps-project/gramps/archive/v5.1.4/gramps-5.1.4.tar.gz
 Summary  : Gramps is a genealogy program for Windows, Linux, Apple MacOS and other UNIX-like systems. It helps you track your family tree by allowing you to store, edit, and research genealogical data.
@@ -19,10 +19,8 @@ Requires: gramps-python = %{version}-%{release}
 Requires: gramps-python3 = %{version}-%{release}
 Requires: PyICU
 Requires: osm-gps-map
-BuildRequires : PyICU
 BuildRequires : buildreq-distutils3
 BuildRequires : intltool
-BuildRequires : osm-gps-map
 
 %description
 This directory contains the catalog needed to use the Gramps glade files in glade.
@@ -105,7 +103,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1635736155
+export SOURCE_DATE_EPOCH=1641570515
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
