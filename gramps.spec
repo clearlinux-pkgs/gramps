@@ -6,10 +6,10 @@
 # autospec commit: 65cf152
 #
 Name     : gramps
-Version  : 6.0.2
-Release  : 39
-URL      : https://github.com/gramps-project/gramps/archive/v6.0.2/gramps-6.0.2.tar.gz
-Source0  : https://github.com/gramps-project/gramps/archive/v6.0.2/gramps-6.0.2.tar.gz
+Version  : 6.0.3
+Release  : 40
+URL      : https://github.com/gramps-project/gramps/archive/v6.0.3/gramps-6.0.3.tar.gz
+Source0  : https://github.com/gramps-project/gramps/archive/v6.0.3/gramps-6.0.3.tar.gz
 Summary  : Gramps is a genealogy program for Windows, Linux, Apple MacOS and other UNIX-like systems. It helps you track your family tree by allowing you to store, edit, and research genealogical data.
 Group    : Development/Tools
 License  : GFDL-1.2 GPL-2.0
@@ -104,15 +104,15 @@ python3 components for the gramps package.
 
 
 %prep
-%setup -q -n gramps-6.0.2
-cd %{_builddir}/gramps-6.0.2
+%setup -q -n gramps-6.0.3
+cd %{_builddir}/gramps-6.0.3
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1750084493
+export SOURCE_DATE_EPOCH=1750436308
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
